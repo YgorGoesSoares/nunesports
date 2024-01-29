@@ -20,6 +20,8 @@ mysql -u seu-usuario -p -e "CREATE DATABASE IF NOT EXISTS bestminds_api;"
 
 O projeto ficará disponível em http://localhost:8080.
 
+As páginas podem ser vistas em bestminds/src/main/resources/static.
+
 ## Contato
 Para qualquer dúvida ou mais informações, entre em contato por e-mail: ygorgoes@outlook.com.
 
