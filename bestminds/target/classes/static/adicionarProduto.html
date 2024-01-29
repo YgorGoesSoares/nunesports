@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nunes Sports - Adicionar Produto</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-4">
+  <div class="company-explanation">
+    <h2>Adicionar Novo Produto</h2>
+    <p>Nesta tela, você pode adicionar um novo produto à lista. As alterações serão refletidas diretamente no banco de dados da Nunes Sports.</p>
+  </div>
+
+  <!-- Formulário para adicionar um novo produto -->
+  <form id="produtoForm">
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" class="form-control" id="titulo" name="titulo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="descricao">Descrição:</label>
+      <textarea class="form-control" id="descricao" name="descricao" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="valor">Valor (utilize ponto para separar os centavos):</label>
+      <input type="text" class="form-control" id="valor" name="valor" required>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#valor").maskMoney({
+          prefix: "R$ ",
+          decimal: ",",
+          thousands: "."
+        });
+      });
+    </script>
+
+    <button type="submit" class="btn btn-primary">Adicionar Produto</button>
+  </form>
+
+  <!-- Botão para redirecionar à página inicial -->
+  <a href="index.html" class="btn btn-secondary mt-3">Voltar à Listagem de Produtos</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script_adicionarProduto.js"></script>
+
+</body>
+</html>

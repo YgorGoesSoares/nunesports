@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports - Painel de Controle</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="company-explanation">
+        <h2>Bem-vindo ao Painel de Controle da Nunes Sports!</h2>
+        <p>Aqui, você pode visualizar, criar, editar e excluir produtos comercializados pela Nunes Sports.</p>
+        <p>Esta página é parte de um teste técnico.</p>
+    </div>
+
+    <h1 class="mb-4">Listagem de Produtos</h1>
+
+    <!-- Tabela para exibir os produtos -->
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID do Produto</th>
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        <!-- Linhas da tabela serão adicionadas dinamicamente com JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Botão para redirecionar para a página de adição de produtos -->
+    <a href="adicionarProduto.html" class="btn btn-primary">Adicionar Novo Produto</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Arquivo JavaScript para interação com a API -->
+
+</body>
+</html>
