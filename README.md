@@ -8,19 +8,15 @@ A documentação da API está disponível em [http://localhost:8080/swagger-ui/i
 
 ## Como Executar o Projeto
 
-1. Clone o Repositório
-Execute o seguinte comando em seu Git: 
+1. Execute o seguinte comando em seu Git: 
 gh repo clone YgorGoesSoares/nunesports
 
-2. Crie a Base de Dados
-É preciso que faça a criação da base de dados antes da execução do projeto. Execute o seguinte comando SQL em seu prompt:
+2. É preciso que faça a criação da base de dados antes da execução do projeto. Execute o seguinte comando SQL em seu prompt:
 mysql -u seu-usuario -p -e "CREATE DATABASE IF NOT EXISTS bestminds_api;"
 
-4. Configure os Dados do Banco
-Abra o arquivo de configurações em src/main/resources/application.properties e altere os campos spring.datasource.username e spring.datasource.password para os dados do seu banco de dados MySQL.
+4. Abra o arquivo de configurações em src/main/resources/application.properties e altere os campos spring.datasource.username e spring.datasource.password para os dados do seu banco de dados MySQL.
 
-5. Execute o Projeto
-Aberto o projeto na IDE de sua preferência, execute o arquivo BestmindsApplication.java (src/main/java/br/com/nunes/sports/bestminds/BestmindsApplication.java)
+5. Aberto o projeto na IDE de sua preferência, execute o arquivo BestmindsApplication.java (src/main/java/br/com/nunes/sports/bestminds/BestmindsApplication.java)
 
 O projeto ficará disponível em http://localhost:8080.
 
